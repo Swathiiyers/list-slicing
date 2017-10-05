@@ -203,8 +203,9 @@ def custom_reverse(input_list):
         True
 
     """
-
-    pass
+    new_list = []
+    for item in input_list:
+        new_list = custom_insert(new_list,0,item)
 
 
 def custom_contains(input_list, value):
@@ -223,8 +224,12 @@ def custom_contains(input_list, value):
         True
 
     """
-
-    return None
+    torf = False
+    for item in input_list:
+        if item == value:
+            torf = True
+    return torf
+    
 
 
 def custom_equality(some_list, another_list):
@@ -242,8 +247,11 @@ def custom_equality(some_list, another_list):
         False
 
     """
-
-    return None
+    torf = True
+    for i in range(custom_len(some_list)):
+        if some_list[i] != another_list[i]:
+            torf = False
+    return torf
 
 
 ##############################################################################
