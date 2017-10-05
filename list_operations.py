@@ -204,7 +204,8 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    del input_list[2]
+    del input_list[6]
 
 
 def delete_middle(input_list):
