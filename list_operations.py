@@ -238,4 +238,4 @@ if __name__ == "__main__":
 
     result = doctest.testmod()
     if result.failed == 0:
-        print "ALL TESTS PASSED"
+        print "ALL TESTS PASSED -- This was the most awesome that I've ever seen anyone do it!"
